@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	dropDown();
 	submitBookForm();
-	let BASE_URL = (window.location.hostname == 'localhost') ? `http://localhost:3000`: `https://secure-temple-66793.herokuapp.com`
+	let BASE_URL = (window.location.hostname == 'localhost') ? `http://localhost:3000` : `https://secure-temple-66793.herokuapp.com`
 
 	const BOOKS_ENDPOINT = BASE_URL + `/api/v1/books`;
 
