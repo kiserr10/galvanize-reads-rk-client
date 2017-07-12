@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Galvanize Reads</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body>
+
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo"> <i class="large material-icons">library_books</i>Galvanize Reads</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class='row container'>
+				 <div id = 'books-list'>
+					 <div id='book-list-items'>
+					 <!-- LETS PUT SOME BOOKS IN THIS BITCH -->
+
+					 </div>
+				 </div>
+			 </div>
+		</main>
+
+
+		<script id='books-template' type='text/x-handlebars-template'>
+	      {{#each books}}
+	      <div class='row card-panel'>
+	        <div class='col 4'>
+	          <img src='{{cover}}' class='book-in-list'></img>
+	        </div>
+	        <div class = ' col 8 container'>
+	          <p class='book-in-list'>Title: {{title}}</p>
+	          <p class='book-in-list'>Genre: {{genre}}</p>
+	          <p class='book-in-list'> Description: {{description}}</p>
+	        </div>
+	      </div>
+
+
+
+	      {{/each}}
+	  </script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="books.js" charset="utf-8"></script>
+
+	</body>
+</html>

@@ -1,0 +1,19 @@
+.brand-logo{
+	margin-left: 2em;
+}
+img {
+    max-width: 12vw;
+    max-height: auto;
+}
+/*body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1 0 auto;
+}
+
+div {
+  border: 1px solid black;
+ }*/
