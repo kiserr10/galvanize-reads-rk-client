@@ -23,3 +23,7 @@ div {
 h2{
 	text-align: center;
 }
+.buttons{
+	display: inline-block;
+	float: left;
+}
